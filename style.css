@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,a,p{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*  Header */
+header{
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    align-items: center; 
+    height: 80px;
+    background: #D9E4E7;
+}
+
+.nav {
+
+    padding-left: 441px;
+    padding-top: 29px;
+
+}
+
+.nav a {
+    text-align: center;
+    padding: 10px ;
+    text-decoration: none;
+   
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 13px;
+    /* identical to box height, or 72% */
+
+    letter-spacing: 0.5px;
+
+    color: #2F3338;
+
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+header #img-header{
+    float: left;
+    height: 80px;
+    padding-left: 46px;
+}
+.login{
+    position:relative;
+    float: right;
+    top: -50px;
+}
+#button-longin{
+
+    text-decoration: none;
+    text-align: center;
+    padding-left: 30px;
+    background-color: #F5F2EC;;
+    color: #2F3338;
+    border-radius: 0  0  0 50px;
+    border:none;
+
+
+    height: 80px;
+    width: 100px;
+    
+    font-family: Poppins;
+    font-size: 18px;
+
+  }
+
+  #button-longin:hover{
+    background-color: #2F3338;;
+    color: #F5F2EC;
+  }
+
+  #carrinho{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-right: 20px;
+}
+
+main{
+    display: flex; /* Sets entrire card element to be a flex container */
+	flex-direction:column; /* Forces elements to align along the vertical axis */
+}
+
+#parallax-home1{
+    display: flex;
+	flex-direction:column; 
+    width: 100%;
+    background-color: rgb(233, 235, 234);
+    background-image: url(Midias/Q4-CR-WDM-HP-Desktop-2.webp);
+    background-repeat: no-repeat;
+}
+
+#container-home1{
+    display: flex;
+	flex-direction:column; 
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color: #D9E4E7;
+}
+
+#parallax-home2{
+    display: flex;
+	flex-direction:column; 
+    width: 100%;
+    background-color: rgb(233, 235, 234);
+    background-image: url(Midias/Q4-CR-WDM-HP-Desktop-2.webp);
+    background-repeat: no-repeat;
+}
+
+footer a p h1,h2{
+    font-family: 'Roboto', sans-serif;
+}
