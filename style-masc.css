@@ -1,0 +1,111 @@
+/** LAYOUT DO CARROSEL DOS TÊNIS MASCULINOS**/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #3b4849;
+}
+
+.masc {
+    font-family: 'Poppins', sans-serif;
+    color: #3b4849;
+    background-color: #d9e4e7;
+    padding-top: 1em;
+}
+
+.masc h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.masc hr {
+    margin: auto;
+    width: 1000px;
+    color: #3b4849;
+}
+
+.linha-masc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 4em;
+    padding: 5em 10em;
+
+}
+
+.modelos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 2px 5px rgba(94, 94, 94, 0.76);
+    background-color: white;
+}
+
+.modelos:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.modelos img{
+    height: 425px;
+    width: 100%;
+}
+
+.modelos h3 {
+    padding: 0.2em 0;
+}
+
+.modelos  p {
+    padding: 0 1em 1em 1em;
+}
+
+.desc-masc {
+    background-image: url(./img/dimi-katsavaris-wM_r98b24tI-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 2em 0;
+}
+
+.container-1 {
+    background-color: white;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    text-align: center;
+    width: 564px;
+    height: 221px;
+    left: 870px;
+    top: 850px;
+    box-shadow: 1px 18px 20px rgba(70, 71, 73, 0.521);
+    border-radius: 20px;
+    padding: 0.6em;
+}
+
+.container-2 {
+    background-color: white;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    text-align: center;
+    width: 564px;
+    height: 221px;
+    left: 77px;
+    top: 1100px;
+    box-shadow: 1px 18px 20px rgba(70, 71, 73, 0.521);
+    border-radius: 20px;
+    padding: 0.6em;
+}
+
+.container-1:hover, .container-2:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+    cursor: pointer;
+}
