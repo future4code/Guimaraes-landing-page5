@@ -17,13 +17,13 @@ header{
     width: 100%;
     align-items: center; 
     height: 80px;
-    background: #D9E4E7;
+    background-color: #D9E4E7;
 }
 
 .nav {
-
     padding-left: 441px;
     padding-top: 29px;
+    justify-content: center;
 
 }
 
@@ -72,8 +72,7 @@ header #img-header{
 
     height: 80px;
     width: 100px;
-    
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
 
   }
@@ -83,44 +82,235 @@ header #img-header{
     color: #F5F2EC;
   }
 
-  #carrinho{
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    padding-right: 20px;
-}
+
+/* BODY E MAIN */
+
 
 main{
     display: flex; /* Sets entrire card element to be a flex container */
 	flex-direction:column; /* Forces elements to align along the vertical axis */
 }
 
-#parallax-home1{
-    display: flex;
-	flex-direction:column; 
-    width: 100%;
-    background-color: rgb(233, 235, 234);
-    background-image: url(Midias/Q4-CR-WDM-HP-Desktop-2.webp);
-    background-repeat: no-repeat;
+#main{
+background-image: url("Midias/back.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
-#container-home1{
+.titulo-home{
+    width: 35%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 72px;
+    color: #0b407e;
+    text-shadow: 0px 5px 10px #ffdb11;
+    padding-right: 50%;
+    padding-top: 20%;
+    padding-left: 30px;
+}
+
+
+#container-home-masculino{
     display: flex;
 	flex-direction:column; 
     width: 100%;
-    background-repeat: no-repeat;
+  height: 100%;
     background-color: #D9E4E7;
 }
 
-#parallax-home2{
-    display: flex;
-	flex-direction:column; 
-    width: 100%;
-    background-color: rgb(233, 235, 234);
-    background-image: url(Midias/Q4-CR-WDM-HP-Desktop-2.webp);
+#pallax2{
+    background-image: url("Midias/back.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
 
-footer a p h1,h2{
-    font-family: 'Roboto', sans-serif;
+
+
+.grid-container-home{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 4em;
+    padding: 5em 10em;
+
 }
+
+.modelos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 2px 5px rgba(94, 94, 94, 0.76);
+    background-color: white;
+}
+
+.modelos:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.modelos >img{
+    height: 400px;
+  
+}
+
+.modelos h3 {
+    padding: 0.2em 0;
+}
+
+.modelos  p {
+    padding: 0 1em 1em 1em;
+}
+
+.desc-masc {
+    background-image: url(./img/dimi-katsavaris-wM_r98b24tI-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 2em 0;
+}
+
+.container-1 {
+    background-color: rgb(217, 228, 231);
+    position: relative;
+    font-size: 1.3em;
+    text-align: center;
+    width: 350px;
+    height: 341px;
+    left: 770px;
+    top: 50px;
+    box-shadow: 1px 18px 20px rgba(70, 71, 73, 0.521);
+    padding: 0.6em;
+}
+
+.container-2 {
+    background-color: #D9E4E7;
+    position: relative;
+    font-size: 1.3em;
+    text-align: center;
+    width: 350px;
+    height: 341px;
+    left: 97px;
+    top: -100px;
+    box-shadow: 1px 18px 20px rgba(70, 71, 73, 0.521);
+    padding: 0.6em;
+}
+
+.container-1:hover, .container-2:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+    cursor: pointer;
+} 
+
+.titulo-modelos{
+   text-align: center; 
+   padding-top: 50px;
+}
+
+/* COMENTARIO */
+
+#comentario{
+background-image: url("Midias/back.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*  FOOTER */
+
+footer{
+
+    background-color: #D9E4E7;
+    width: 100%;
+}
+
+    .grid-footer {
+       
+        display:grid;
+        height: 383px;
+        width: 1348px;
+        grid-template-columns: 300px 300px 300px;
+        grid-auto-rows: minmax(30px, auto);
+        grid-auto-columns: 30px;
+        grid-column-gap: 10px;
+        justify-content: space-around;
+        border-bottom: 1px solid #2F3338 ;
+        
+     }
+        
+
+     .grid-footer-item {
+        width: 359px;
+        height: 100px;
+        padding-top: 35px;
+        padding-left: 0px;
+        justify-content: center;
+        align-items: baseline;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        color: #2F3338;
+   }
+
+
+   .grid-footer-links{
+    display:grid;
+    height: 383px;
+    width: 1348px;
+    grid-template-columns: 300px 300px 300px;
+    grid-auto-rows: minmax(30px, auto);
+    grid-auto-columns: 30px;
+    grid-column-gap: 10px;
+    justify-content: space-around;
+   }
+
+   .grid-footer-links-item {
+    width: 359px;
+    height: 100px;
+    padding-top: 55px;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+    line-height: 22px;
+   }
+
+   .grid-footer-links-item h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #2F3338;
+    font-style: bold; 
+   }
+
+   .grid-footer-links-item a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #2F3338;
+    text-decoration: none;
+   }
+
+   .grid-footer-links-item a:hover {
+    text-decoration: underline;
+}
+
+
