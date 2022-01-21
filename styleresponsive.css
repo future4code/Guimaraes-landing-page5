@@ -1,0 +1,302 @@
+/* MENU RESPONSIVO */
+
+@media (max-width: 999px) {
+
+    .logo {
+      height: 2.3em;
+    
+    }
+    .login button{
+    
+      font-size: 0.8em;
+      height: 8vh;
+      width: 10vw;
+      border-radius:  0 0 0 0;
+    }
+  
+  
+    .login button{
+    
+      font-size: 0.8em;
+      height: 8vh;
+      width: 10vw;
+      border-radius:  0 0px 0 0;
+    
+    }
+    
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 40vw;
+      height: 50vh;
+      color: #2F3338;
+      background: #D9E4E7;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+  
+  
+    .mobile-menu {
+      display: block;
+    }
+  
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  /* main */
+
+  main{
+    display: flex; 
+  flex-direction:column; 
+    background-size: cover;
+  }
+  
+  #main{
+  background-image: url("Midias/background2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  }
+  
+  #pallax2{
+    background-image: none;
+  background-color:#2F3338;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  }
+  
+  #comentario{
+    background-image: none;
+    background-color:#2F3338;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  }
+  
+  #container-home-masculino{
+    background-color:#D9E4E7;
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+    }
+  
+  #container-home-feminino{
+    background-color:#D9E4E7;
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  
+  }
+
+  .titulo-home{
+    visibility: collapse;
+  }
+
+  /* Grid */
+
+  .comentarios-grid{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: 1fr;
+    gap: 4em;
+    padding: 5em 10em;
+    justify-content: center;
+    align-items: baseline;
+
+  }
+
+
+  .container-1 {
+  
+    background-color: #D9E4E7;
+    position: relative;
+    font-size: 4vw;
+    text-align: center;
+    width: 80vw;
+    height:40vh;
+    box-shadow: none;
+    padding: 0.6em;
+  
+  }
+  
+  .container-2 {
+    background-color: #D9E4E7;
+    position: relative;
+    float: center;
+    font-size: 4vw;
+    text-align: center;
+    width: 80vw;
+    height:40vh;
+    box-shadow: none;
+    padding: 0.6em;
+  }
+
+  }
+
+  /* Slide */
+
+  @media (max-width: 999px) {
+
+    .mySlides {display: none}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 60%;
+      width: auto;
+      padding: 5px;
+      color: #2F3338;
+      background: #d9e4e7a2;
+      font-weight: bold;
+      font-size: 14px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      visibility: collapse;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+  
+    .modelos {
+      object-fit: cover;
+      height: 90vh;
+      width: 80vw;
+    }
+    
+    .modelos img {
+      height: 79vh;
+      width: 80vw;
+    }
+
+    .modelos:hover {
+      transform: none;
+      transition: none;
+      cursor:cell;
+    }
+    
+    .modelos button {
+      height: 7vh;
+      width: 24vw;
+      border-radius: 0  0  40px 0 ;
+    }
+    
+    .modelos p {
+      font-size: 3vw;
+      line-height: 4px;
+    }
+    
+    .modelos h3 {
+      font-size:  3vw;
+    }
+
+    .titulo-modelos{
+        font-size: 5vw;
+    }
+    
+    .grid-container-home{
+    transition: transform 0.5s ease-in-out;
+ 
+    }
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+    /* bugs
+
+    1. menu está indo para a lateral, esticando a tela
+    2. slide inicia sem nenhuma foto,
+    3. no site normal está com slide, quando não deveria estar, antes estava um grid 
+    de 3 colunas e não sei o que fez ficar em slide e uma coluna (configuração do responsivo)
+    4. Quando abre o menu fica cinza, não achei onde  está essa cor cinza para mudar.
