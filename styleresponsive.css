@@ -1,7 +1,7 @@
 /* MENU RESPONSIVO */
 
 @media (max-width: 700px) {
-
+  
     .logo {
       height: 2.3em;
     
@@ -19,7 +19,7 @@
     
       font-size: 0.8em;
       height: 8vh;
-      width: 10vw;
+      width: 14vw;
       border-radius:  0 0px 0 0;
     
     }
@@ -81,7 +81,10 @@
   main{
     display: flex; 
   flex-direction:column; 
+  justify-content: center;
+  align-items: center;
     background-size: cover;
+    overflow-x: hidden;
   }
   
 
@@ -107,19 +110,20 @@
   }
   
   #container-home-masculino{
-    background-color:#D9E4E7;
-    background-size: cover;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: 100%;
+    display: flex;
+    flex-direction:column; 
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
     }
   
   #container-home-feminino{
-    background-color:#D9E4E7;
-    background-size: cover;
-  background-repeat: no-repeat;
-  background-size: 100%;
+    display: flex;
+    flex-direction:column; 
+    justify-content: center;
+    align-items: center;
   width: 100%;
   height: 100%;
   
@@ -133,10 +137,9 @@
 
   .comentarios-grid{
     display: grid;
+    position: relative;
     grid-template-columns:  1fr;
     grid-template-rows: 1fr;
-    gap: 4em;
-    padding: 5em 10em;
     justify-content: center;
     align-items: baseline;
 
@@ -170,67 +173,26 @@
 
   }
 
-  /* Slide */
+  /* container masculino e feminino */
 
   @media (max-width: 999px) {
 
-    .mySlides {display: none}
     
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-    }
+    .grid-container-home{
+      transition: transform 0.5s ease-in-out;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr;
+        gap: 4em;
+        padding: 0em;
+        justify-content: center;
+        align-items: baseline;
+        padding-bottom: 120vh;
+        padding-top: 2em;
     
-    /* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 60%;
-      width: auto;
-      padding: 5px;
-      color: #2F3338;
-      background: #d9e4e7a2;
-      font-weight: bold;
-      font-size: 14px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    
-    
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-      visibility: collapse;
-    }
-    
-    .active, .dot:hover {
-      background-color: #717171;
-    }
-    
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-
-  
+      }
     .modelos {
-      object-fit: cover;
+      display: flex;
       height: 90vh;
       width: 80vw;
     }
@@ -265,8 +227,19 @@
         font-size: 5vw;
     }
     
-    .grid-container-home{
-    transition: transform 0.5s ease-in-out;}
+
+
+/* footer*/
+
+footer{
+  display: flex;
+  flex-direction:column; 
+  justify-content: center;
+  align-items: center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  }
 
 
     .grid-footer {
@@ -275,11 +248,12 @@
     grid-template-columns:  1fr;
     grid-template-rows: 1fr;
     padding: 1em ;
+    padding-bottom: 10px;
     justify-content: center;
     align-items: center;
     border-bottom: none ;
     flex-wrap: nowrap;
-    height: 80vh;
+    height: 85vh;
       
    }
 
@@ -297,16 +271,18 @@
    .grid-footer-links{
     display: grid;
     grid-template-columns:  1fr;
-    grid-auto-columns: 0px;
+    grid-template-rows: 1fr;
+    padding: 10px ;
     justify-content: space-evenly;
-    align-items: center;
+    align-items:baseline;
     border-bottom: none ;
     padding:0px;
     width: 100vw;
-    height: 95vh;
+    height: 75vh;
+    line-height: 10px;
    }
-  
-   .grid-footer-links-item {
+
+   .grid-footer-links :nth-child(1){
     display: grid;
     width: 100vw;
     height: auto;
@@ -315,25 +291,42 @@
     padding: 0px;
     justify-content: space-evenly;
    }
+
+   .grid-footer-links :nth-child(2){
+    display: grid;
+    width: 100vw;
+    height: auto;
+    padding-top: 3px;
+    align-items: center;
+    line-height: 10px;
+    padding: 0px;
+    justify-content: space-evenly;
+   }
   
+   .grid-footer-links :nth-child(3){
 
-    }
-    
-    @-webkit-keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
-    }
-    
-    @keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
-    }
-    
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-      .prev, .next,.text {font-size: 11px}
-    }
+    display: grid;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    line-height: 10px;
+    padding: 0px;
+    padding-top: 3px;
+    justify-content: space-evenly;
+   }
 
+   .grid-footer-links :nth-child(4){
+    display: grid;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    line-height: 10px;
+    padding: 0px;
+    padding-top: 3px;
+    justify-content: space-evenly;
+   }
+   
+  }
 
 
 
@@ -352,13 +345,13 @@
     .modelos{
       
       width: 80vw;
-      height: 70vh;
+      height: 60vh;
     }
 
     .modelos img{
       
       width: 80vw;
-      height: 60vh;
+      height: 50vh;
     }
 
     .container-1 {
@@ -368,6 +361,18 @@
      
     
     }
+
+    .modelos p {
+      
+      font-size: 14px;
+    }
+
+    .modelos h3{
+      
+      font-size: 14px;
+    }
+
+
     
     .container-2 {
      
@@ -376,10 +381,4 @@
   
     }
   }
-    /* bugs
 
-    1. menu está indo para a lateral, esticando a tela
-    2. slide inicia sem nenhuma foto,
-    3. no site normal está com slide, quando não deveria estar, antes estava um grid 
-    de 3 colunas e não sei o que fez ficar em slide e uma coluna (configuração do responsivo)
-    4. Quando abre o menu fica cinza, não achei onde  está essa cor cinza para mudar.
