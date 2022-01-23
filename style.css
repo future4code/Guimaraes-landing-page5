@@ -4,11 +4,11 @@
   padding: 0px;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
-h1,h2,h3,a,p{
+h1,h2,h3,a,p {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -27,12 +27,12 @@ a:hover {
 /* MENU  */ 
 .logo {
   height: 4em;
-
 }
 
-.menu-footer-inicio{
+.menu-footer-inicio {
   visibility: collapse;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -67,7 +67,7 @@ nav {
   transition: 0.3s;
 }
 
-.login button{
+.login button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -84,10 +84,10 @@ nav {
 
 }
 
-.login p{
+.login p {
   padding: 10%;
 }
-.login button:hover{
+.login button:hover {
   background-color: #2F3338;
   color: #F5F2EC;
 }
@@ -95,13 +95,13 @@ nav {
 
 /* MAIN */
 
-main{
+main {
   display: flex; 
-flex-direction:column; 
+  flex-direction:column; 
   background-size: cover;
 }
 
-#main{
+#main {
   background-image: url("Midias/backeditado.png");
   min-height: 500px; 
   background-attachment: fixed;
@@ -112,7 +112,7 @@ flex-direction:column;
   height: 100%;
 }
 
-.titulo-home{
+.titulo-home {
   width: 35%;
   font-family: Poppins;
   font-style: normal;
@@ -126,7 +126,7 @@ flex-direction:column;
 
 /* Masculinos */
 
-#container-home-masculino{
+#container-home-masculino {
   position:relative;
   min-height: 500px;
   display: flex;
@@ -138,8 +138,7 @@ flex-direction:column;
 
 
 
-.grid-container-home{
-
+.grid-container-home {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
@@ -149,7 +148,6 @@ flex-direction:column;
   justify-content: space-evenly;
   height: 100vh;
   width: 80%;
-
 }
 
 
@@ -168,12 +166,12 @@ flex-direction:column;
   cursor: pointer;
 }
 
-.titulo-modelos{
+.titulo-modelos {
   text-align: center; 
   padding-top: 50px;
  }
  
- .modelos button{
+ .modelos button {
    position: absolute;
    text-decoration: none;
    text-align: center;
@@ -188,13 +186,13 @@ flex-direction:column;
    font-size: 12px;
  }
  
- .modelos button:hover{
+ .modelos button:hover {
    background-color: #2F3338;;
    color: #F5F2EC;
  }
-.modelos >img{
-  height: 400px;
 
+.modelos >img {
+  height: 400px;
 }
 
 .modelos h3 {
@@ -204,8 +202,6 @@ flex-direction:column;
 .modelos  p {
   padding: 0 1em 1em 1em;
 }
-
- 
 
 .desc-masc {
   background-image: url(./img/dimi-katsavaris-wM_r98b24tI-unsplash.jpg);
@@ -247,8 +243,7 @@ flex-direction:column;
   cursor: pointer;
 } 
 
-.comentarios-grid{
-
+.comentarios-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -257,8 +252,7 @@ flex-direction:column;
 
 }
 
-
-#pallax2{
+#pallax2 {
   background-image: url("Midias/backeditado2.png");
   min-height: 500px; 
   background-attachment: fixed;
@@ -271,7 +265,7 @@ flex-direction:column;
 
 /* container feminino */
 
-#container-home-feminino{
+#container-home-feminino {
   display: flex;
   flex-direction:column; 
   width: 100%;
@@ -281,7 +275,7 @@ flex-direction:column;
 
 /* COMENTARIO */
 
-#comentario{
+#comentario {
   background-image: url("Midias/backeditado2.png");
   min-height: 500px; 
   background-attachment: fixed;
@@ -296,54 +290,49 @@ flex-direction:column;
 
 /*  FOOTER */
 
-footer{
-
+footer {
   background-color: #D9E4E7;
   width: 100%;
 }
 
   .grid-footer {
-     
-      display:grid;
-      height: 383px;
-      width: 90vw;
-      padding-top: 80px;
-      grid-template-columns: 200px 200px ;
-      grid-auto-rows: minmax(30px, auto);
-      grid-auto-columns: 30px;
-      grid-column-gap: 10px;
-      justify-content: space-evenly;
-      border-bottom: 1px solid #2F3338 ;
-      
-      
+    display:grid;
+    height: 383px;
+    width: 90vw;
+    padding-top: 80px;
+    grid-template-columns: 200px 200px ;
+    grid-auto-rows: minmax(30px, auto);
+    grid-auto-columns: 30px;
+    grid-column-gap: 10px;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #2F3338; 
    }
       
 
    .grid-footer-item {
-      width: 359px;
-      height: 100px;
-      padding-top: 35px;
-      padding-left: 0px;
-      justify-content: center;
-      align-items: baseline;
-      font-family: 'Poppins', sans-serif;
-      font-size: 20px;
-      color: #2F3338;
+    width: 359px;
+    height: 100px;
+    padding-top: 35px;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: baseline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #2F3338;
  }
 
- .grid-footer-item a{
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  color: #2F3338;
+ .grid-footer-item a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #2F3338;
 }
 
 .grid-footer-item a:hover {
   text-decoration: underline;
 }
 
-
- .grid-footer-links{
+ .grid-footer-links {
   display:grid;
   height: 383px;
   width: 1348px;
@@ -374,7 +363,6 @@ footer{
   align-items: center;
   line-height: 22px;
  }
-
 
  .grid-footer-links-item h2 {
   font-family: 'Poppins', sans-serif;
