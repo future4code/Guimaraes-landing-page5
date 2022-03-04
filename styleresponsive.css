@@ -1,31 +1,28 @@
 /* MENU RESPONSIVO */
 
 @media (max-width: 700px) {
-  
+  .nav{
+    width: 100vw;
+  }
   .logo {
     height: 2.3em;
+    padding-left: 60px;
   }
 
   .login button {
     font-size: 0.8em;
     height: 8vh;
     width: 10vw;
+    right: 0;
     border-radius:  0 0 0 0;
+
   }
 
-  .login button {
-    font-size: 0.8em;
-    height: 8vh;
-    width: 14vw;
-    border-radius:  0 0px 0 0;
-  
-  }
-  
   .nav-list {
     position: fixed;
     top: 8vh;
     right: 0;
-    width: 40vw;
+    width: 100vw;
     height: 50vh;
     color: #2F3338;
     background: #D9E4E7;
@@ -314,12 +311,11 @@
     @media (max-width: 700px) {
 
     #main {
-      background-color: #D9E4E7;
+      background-color: #150047;
       background-image: none;
       background-attachment:scroll;
       background-position: center;
       background-size: contain;
-      background-image: url(Midias/mobile.png);
       width: 100vw;
     }
 
